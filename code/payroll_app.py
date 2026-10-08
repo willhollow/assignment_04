@@ -44,7 +44,10 @@ import streamlit as st
 from payroll import build_payroll, load_employees, load_timesheet, payroll_export
 
 st.title("Salt City Coffee — Weekly Payroll")
-st.write("Upload this week's timesheet CSV from the point-of-sale system to see the payroll.")
+st.write(
+    "Upload this week's timesheet CSV from the point-of-sale system "
+    "to see the payroll."
+)
 
 roster = load_employees()
 upload = st.file_uploader("Timesheet CSV", type="csv", key="timesheet")

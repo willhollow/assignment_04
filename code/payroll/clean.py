@@ -112,6 +112,7 @@ def clean_currency(value) -> float:
     except ValueError:
         return 0.0
 
+
 def add_hours_worked(timesheet: pd.DataFrame) -> pd.DataFrame:
     """Return a copy of the timesheet with one new column, `hours_worked` (float).
 
